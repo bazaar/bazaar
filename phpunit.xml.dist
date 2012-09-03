@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit colors="true" bootstrap="vendor/autoload.php">
+    <testsuites>
+        <testsuite name="Bazaar Test Suite">
+            <directory>./src/Bazaar/Component/*/Tests</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist>
+            <directory>./src/Bazaar/</directory>
+            <exclude>
+                <directory>./src/Bazaar/Component/*/Tests</directory>
+                <directory>./src/Bazaar/Component/*/Resources</directory>
+                <directory>./src/Bazaar/Component/*/vendor</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+</phpunit>
